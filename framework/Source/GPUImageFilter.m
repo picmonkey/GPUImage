@@ -713,7 +713,7 @@ NSString *const kGPUImagePassthroughFragmentShaderString = SHADER_STRING
 
 - (CGSize)maximumOutputSize;
 {
-   if (overrideInputSize == YES && !(CGSizeEqualToSize(forcedMaximumSize,CGSizeZero)))
+   if (overrideInputSize == YES)
         return forcedMaximumSize;
     
     return CGSizeZero;
