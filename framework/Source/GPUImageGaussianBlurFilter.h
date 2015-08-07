@@ -18,10 +18,6 @@
  */
 @property (readwrite, nonatomic) CGFloat blurRadiusInPixels;
 
-/** Setting these properties will allow the blur radius to scale with the size of the image
- */
-@property (readwrite, nonatomic) CGFloat blurRadiusAsFractionOfImageWidth;
-@property (readwrite, nonatomic) CGFloat blurRadiusAsFractionOfImageHeight;
 
 /// The number of times to sequentially blur the incoming image. The more passes, the slower the filter.
 @property(readwrite, nonatomic) NSUInteger blurPasses;

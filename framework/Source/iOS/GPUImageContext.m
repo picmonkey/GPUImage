@@ -93,10 +93,13 @@ static void *openGLESContextQueueKey;
     EAGLContext *imageProcessingContext = [self context];
     if ([EAGLContext currentContext] != imageProcessingContext)
     {
+        // set it EVERY time we swap contexts
         [EAGLContext setCurrentContext:imageProcessingContext];
+        self.currentShaderProgram = shaderProgram;
+        [shaderProgram use];
     }
     
-    if (self.currentShaderProgram != shaderProgram)
+    else if (self.currentShaderProgram != shaderProgram)
     {
         self.currentShaderProgram = shaderProgram;
         [shaderProgram use];

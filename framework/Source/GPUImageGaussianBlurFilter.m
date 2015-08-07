@@ -4,8 +4,6 @@
 
 @synthesize texelSpacingMultiplier = _texelSpacingMultiplier;
 @synthesize blurRadiusInPixels = _blurRadiusInPixels;
-@synthesize blurRadiusAsFractionOfImageWidth  = _blurRadiusAsFractionOfImageWidth;
-@synthesize blurRadiusAsFractionOfImageHeight = _blurRadiusAsFractionOfImageHeight;
 @synthesize blurPasses = _blurPasses;
 
 #pragma mark -
